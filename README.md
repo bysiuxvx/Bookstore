@@ -1,13 +1,13 @@
 ## Description
 
-Bookstore based on React and Typescript.
+Bookstore based on React and Typescript. Redux state management and checkout form validation.
 
 ## Technologies
 
     React
     Typescript
     Redux toolkit
-    sass
+    scss
     Bootstrap & Reactstrap
     Availity Reactstrap Validation
     lodash
