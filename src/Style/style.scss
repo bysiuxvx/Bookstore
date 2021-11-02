@@ -1,0 +1,221 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  height: 100vh;
+  h2,
+  p,
+  h3,
+  h4 {
+    color: #1f1f1f;
+  }
+}
+
+.navbar {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    position: relative;
+  }
+  .container-fluid {
+    justify-content: end;
+  }
+  .navlink-cotainer {
+    justify-content: end;
+  }
+  ul {
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 75%;
+    }
+    .nav-item {
+      text-align: center;
+      margin: 0.25rem;
+      @include media-breakpoint-up(md) {
+        margin: 0.5rem 1.5rem;
+      }
+      a {
+        font-size: 1.5rem;
+        padding: 0.625rem;
+        display: block;
+        text-decoration: none;
+        color: #1f1f1f;
+      }
+      a.active {
+        @include media-breakpoint-up(md) {
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  padding-top: 4rem;
+  @include media-breakpoint-up(md) {
+    padding-top: 0;
+  }
+  h2 {
+    text-align: center;
+    margin: 0.5rem;
+    padding-top: 1rem;
+    @include media-breakpoint-up(md) {
+      padding-top: 2rem;
+    }
+    @include media-breakpoint-up(md) {
+      padding-top: 4rem;
+    }
+  }
+
+  .home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    @include media-breakpoint-up(md) {
+      max-width: 75vw;
+      padding-top: 2rem;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 3rem;
+    }
+    .book-container {
+      display: block;
+      width: 15rem;
+      height: fit-content;
+      margin: 1.5rem;
+      background-color: #ddd;
+      border-radius: 10px;
+
+      .cover-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 80%;
+        }
+      }
+      h2 {
+        text-align: center;
+        padding: 0.25rem 2rem;
+        font-size: 1.25rem;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .cart-container {
+    padding-top: 0.5rem;
+    @include media-breakpoint-up(md) {
+      padding-top: 1.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 2rem;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 5rem;
+      }
+    }
+    .container {
+      @include media-breakpoint-up(md) {
+        max-width: 75vw;
+      }
+      @include media-breakpoint-up(lg) {
+        max-width: 70vw;
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: 55vw;
+      }
+      .cart-item {
+        max-height: 6rem;
+        align-items: left;
+        background-color: #ddd;
+        justify-content: space-between;
+        margin-bottom: 1.675rem;
+        padding: 1rem 0;
+
+        .item-summary {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include media-breakpoint-up(lg) {
+            padding-right: 3rem;
+          }
+
+          img {
+            max-width: 2.25rem;
+          }
+
+          p {
+            margin-left: 0.25rem;
+            margin: 0;
+          }
+        }
+        .col-3 {
+          display: flex;
+          align-items: center;
+        }
+        button {
+          @include media-breakpoint-down(md) {
+            margin: 0.5rem 0;
+            margin-left: -1.5rem;
+          }
+        }
+      }
+    }
+
+    .cart-buttons {
+      background-color: none;
+      padding-top: 5rem;
+      .col-6 {
+        display: flex;
+        justify-content: center;
+        button {
+          height: 2.375rem;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .checkout-container {
+    padding-top: 0.5rem;
+    max-width: 75vw;
+
+    @include media-breakpoint-up(md) {
+      max-width: 55vw;
+      padding-top: 2rem;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 40vw;
+      padding-top: 2.5rem;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+}
