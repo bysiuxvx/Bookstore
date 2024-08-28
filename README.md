@@ -1,5 +1,5 @@
 ## Description
-
+Recruitmen process homework
 Bookstore based on React and Typescript. Redux state management and checkout form validation.
 
 ## Technologies
